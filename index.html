@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Crescent - Real Estate & Property" />
+    <meta
+      name="keywords"
+      content="apartment, architecture, broker, building, construction, home, house, interior, property, property agency, property agent, property listing, property sell, real estate, realtor"
+    />
+    <meta name="author" content="Zaderon" />
+    <title>Real Estate</title>
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/css/fontawesome.css" />
+    <link rel="stylesheet" href="lib/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/border.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+  </head>
+
+  <body>
+    <div class="slideshow">
+      <!-- Navbar Start -->
+      <nav class="navbar d-flex justify-content-center py-2 navbar-border z-2">
+        <div class="navbar-size">
+          <div class="container-lg d-flex justify-content-between px-0">
+            <div class="d-none d-sm-flex align-items-center gap-3">
+              <a href="https://facebook.com" class="social-icon-32"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://instagram.com" class="social-icon-32"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="https://youtube.com" class="social-icon-32"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://twitter.com" class="social-icon-32"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a class="navbar-brand nav-logo-wrapper mx-0" href="index.html">
+              <img
+                src="img/logo.png"
+                alt="Brand Logo"
+                class="nav-logo img-fluid mx-auto"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span
+                class="d-flex c-white custom-toggler align-items-center gap-3"
+              >
+                Menu
+                <span class="custom-toggler-icon">
+                  <span class="bar bar-1"></span>
+                  <span class="bar bar-2"></span>
+                  <span class="bar bar-3"></span>
+                </span>
+              </span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img
+                    src="img/logo.png"
+                    class="nav-logo mt-3"
+                    alt="Brand Logo"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body mt-3">
+                <ul class="navbar-nav gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button
+                      class="nav-link dropdown-toggle"
+                      id="listingDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="d-flex align-items-start">
+                        Listing
+                        <i
+                          id="listingDropdownIcon"
+                          class="fa-solid fa-plus dropdown-icon-size ms-2 mt-2"
+                        ></i>
+                      </span>
+                    </button>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="listingDropdown">
+                      <li>
+                        <a class="dropdown-item" href="property-listings.html"
+                          >Property Listings</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="property-detail.html"
+                          >Property Detail</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <button
+                      class="nav-link dropdown-toggle"
+                      id="servicesDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="d-flex align-items-start">
+                        Services
+                        <i
+                          id="ServicesDropdownIcon"
+                          class="fa-solid fa-plus dropdown-icon-size ms-2 mt-2"
+                        ></i>
+                      </span>
+                    </button>
+                    <!-- <ul
+                      class="dropdown-menu"
+                      aria-labelledby="servicesDropdown"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="services.html"
+                          >Services</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="services-detail.html"
+                          >Service Detail</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button
+                      class="nav-link dropdown-toggle"
+                      id="pagesDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="d-flex align-items-start">
+                        Our Team
+                        <i
+                          id="pagesDropdownIcon"
+                          class="fa-solid fa-plus dropdown-icon-size ms-2 mt-2"
+                        ></i>
+                      </span>
+                    </button>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                      <li>
+                        <a class="dropdown-item" href="team.html">Our Team</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="pricing.html">Pricing</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="faqs.html">FAQs</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="testimonials.html"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="404-page.html"
+                          >404 Error</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="blog-post.html"
+                          >Blog Post</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="single-post.html"
+                          >Single Post</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="alert-container"></div>
+        </div>
+      </nav>
+      <div class="py-5"></div>
+      <!-- Navbar End -->
+      <!-- Hero Start -->
+      <div class="page-size pt-4 pt-sm-5 position-relative z-1">
+        <h1 class="c-white text-center col-12 col-lg-8 mx-auto fade-in-up">
+          Redefining Spaces with <em class="ff-playfair">Style</em> and
+          <em class="ff-playfair">Luxury</em>
+        </h1>
+        <p
+          class="c-white text-center col-12 col-lg-6 mx-auto mt-4 pt-2 fade-in-up"
+        >
+          Find your sanctuary at Crescent—where luxurious architecture and
+          modern design converge, creating a unique living experience for those
+          who seek beauty in every detail
+        </p>
+        <div class="d-flex justify-content-center mt-4 pt-2">
+          <a href="property-listings.html" class="btn-1 fade-in-up"
+            >View Listing ></a
+          >
+        </div>
+        <div
+          class="d-flex mt-4 fade-in-up justify-content-center justify-content-lg-start"
+        >
+          <div class="">
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <div>
+                <img
+                  src="img/testimonial-1.jpg"
+                  alt="testimonial"
+                  class="testimonial-circle"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/testimonial-2.jpg"
+                  alt="testimonial"
+                  class="testimonial-circle testimonial-margin"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/testimonial-3.jpg"
+                  alt="testimonial"
+                  class="testimonial-circle testimonial-margin"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/testimonial-4.png"
+                  alt="testimonial"
+                  class="testimonial-circle testimonial-margin"
+                />
+              </div>
+            </div>
+            <p
+              class="testimonial-subtitle col-8 mt-2 text-center text-lg-start mx-auto mx-lg-0"
+            >
+              Over 400+ agents by your side, Crescent provides professional
+              guidance
+            </p>
+          </div>
+          <div class="d-none d-lg-flex gap-4 mt-5">
+            <input type="text" class="hero-form mt-1" placeholder="Location" />
+            <select class="hero-form-select">
+              <option value="" disabled selected>Budget</option>
+              <option value="50000-150000">$50000 - $150000</option>
+              <option value="150000-300000">$150000 - $300000</option>
+              <option value="300000-600000">$300000 - $600000</option>
+              <option value="600000-1500000">$600000 - $1500000</option>
+            </select>
+
+            <select class="hero-form-select">
+              <option value="" disabled selected>Type</option>
+              <option value="Residential">Residential</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Luxury">Luxury</option>
+              <option value="Land">Land</option>
+              <option value="Rental">Rental</option>
+            </select>
+            <a href="#" class="social-icon-32 mt-2"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Hero End -->
+    </div>
+    <!-- About Start -->
+    <div class="bg-subtle">
+      <div class="page-size overflow-hidden">
+        <span class="subtitle fade-in-up"> about us </span>
+        <h2 class="col-12 col-lg-7 mt-3 fade-in-up">
+          Blending Modern Design and Tradition to
+          <i class="ff-playfair">Build</i> Your
+          <i class="ff-playfair">Future</i>
+        </h2>
+        <div class="container px-0 fade-in-up">
+          <div class="row row-cols-1 row-cols-lg-2 g-5 my-1">
+            <div class="col">
+              <p class="c-heading-2">
+                At Crescent, we redefine living spaces with innovative designs
+                and unparalleled expertise. Our passion lies in creating homes
+                that inspire. With a commitment to quality and customer
+                satisfaction.
+              </p>
+            </div>
+            <div class="col">
+              <p class="c-heading-2">
+                Every detail is crafted with precision, ensuring you find the
+                perfect place to call home. From luxury properties to functional
+                spaces, Crescent brings dreams to life, one home at a time.
+              </p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-2 g-5">
+            <div class="col">
+              <h5>Our Vision</h5>
+              <p class="c-heading-2 my-4">
+                To be the leading real estate brand, redefining modern living by
+                creating spaces that inspire, empower, and elevate lifestyles
+              </p>
+              <h5>Our Mission</h5>
+              <ul class="c-heading-2 my-4">
+                <li>
+                  <i class="fa-solid fa-check me-2"></i>Connecting people with
+                  perpect properties
+                </li>
+                <li>
+                  <i class="fa-solid fa-check me-2"></i>Delivering Excellence in
+                  real estate
+                </li>
+                <li>
+                  <i class="fa-solid fa-check me-2"></i>Empowering communities
+                  through exceptional spaces
+                </li>
+                <li>
+                  <i class="fa-solid fa-check me-2"></i>
+                  Creating value, trust, and satisfaction
+                </li>
+                <li>
+                  <i class="fa-solid fa-check me-2"></i>
+                  Redefining modern living with innovation
+                </li>
+              </ul>
+              <div
+                class="about-card d-flex justify-content-between align-items-center mt-4"
+              >
+                <div>
+                  <h3 class="c-white">
+                    Start Your <i class="ff-playfair">Property</i>
+                  </h3>
+                  <h3 class="c-white">Search Now!</h3>
+                </div>
+                <div>
+                  <button class="btn-1 p-2 me-4">Contact Us ></button>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-stretch">
+              <img src="img/about-1.jpg" alt="about" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <p class="mt-5 fade-in-up">
+          Partnering with global brand to bring you world-class real estate
+          solutions
+        </p>
+        <div class="swiper-container mt-1 fade-in-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/logo-1.png" alt="Logo 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-2.png" alt="Logo 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-3.png" alt="Logo 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-4.png" alt="Logo 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-5.png" alt="Logo 5" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-6.png" alt="Logo 6" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-7.png" alt="Logo 7" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-8.png" alt="Logo 8" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/logo-9.png" alt="Logo 9" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+    <!-- Services Start -->
+    <div class="bg-accent">
+      <div class="page-size">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center fade-in-up"
+        >
+          <span class="subtitle my-3">Our Services</span>
+          <h2 class="col-12 col-lg-6 text-center pb-5">
+            Expert Services for <i class="ff-playfair">Every</i> Real Estate
+            <i class="ff-playfair">Journey</i>
+          </h2>
+        </div>
+        <div class="container-lg px-0 overflow-hidden pt-5">
+          <div
+            class="row row-cols-1 row-cols-lg-3 g-5 py-lg-4 border-lg-top fade-in-up"
+          >
+            <div class="col my-2">
+              <div class="d-flex gap-4">
+                <img src="icon/icon-1.png" alt="icon" class="services-icon" />
+                <div>
+                  <h5>Property Sales</h5>
+                  <p>
+                    Helping you buy or sell properties with expert guidance and
+                    seamless transactions
+                  </p>
+                  <a href="services-detail.html" class="link-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col my-2 border-top border-lg-top-0">
+              <div class="d-flex gap-4 mt-3 mt-lg-0">
+                <img src="icon/icon-2.png" alt="icon" class="services-icon" />
+                <div>
+                  <h5>Property Rentals</h5>
+                  <p>
+                    Connecting you to the perfect rental, whether you’re looking
+                    for an apartment or a villa
+                  </p>
+                  <a href="services-detail.html" class="link-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col my-2 border-top border-lg-top-0">
+              <div class="d-flex gap-4 mt-3 mt-lg-0">
+                <img src="icon/icon-3.png" alt="icon" class="services-icon" />
+                <div>
+                  <h5>Invesment Consulting</h5>
+                  <p>
+                    Professional advice and opportunities to maximize returns on
+                    real estate
+                  </p>
+                  <a href="services-detail.html" class="link-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row row-cols-1 row-cols-lg-3 g-5 py-lg-4 border-lg-top border-lg-bottom mt-1 fade-in-up"
+          >
+            <div class="col my-2 border-top border-lg-top-0">
+              <div class="d-flex gap-4 mt-3 mt-lg-0">
+                <img src="icon/icon-4.png" alt="icon" class="services-icon" />
+                <div>
+                  <h5>Property Management</h5>
+                  <p>
+                    Full-service property management, ensuring your investments
+                    are well-maintained
+                  </p>
+                  <a href="services-detail.html" class="link-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col my-2 border-top border-lg-top-0">
+              <div class="d-flex gap-4 mt-3 mt-lg-0">
+                <img src="icon/icon-5.png" alt="icon" class="services-icon" />
+                <div>
+                  <h5>Market Analysis</h5>
+                  <p>
+                    In-depth market analysis and research to guide your real
+                    estate decisions
+                  </p>
+                  <a href="services-detail.html" class="link-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col my-2 border-top border-bottom border-lg-top-0 border-lg-bottom-0"
+            >
+              <div class="d-flex gap-4 mt-3 mb-3 mt-lg-0">
+                <img src="icon/icon-6.png" alt="icon" class="services-icon" />
+                <div>
+                  <h5>Valuation Services</h5>
+                  <p>
+                    Accurate property valuation services to help you make
+                    informed when buying or selling
+                  </p>
+                  <a href="services-detail.html" class="link-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+    <!-- Listing Start -->
+    <div class="bg-subtle">
+      <div class="page-size">
+        <div class="row row-cols-1 row-cols-lg-2 g-5 fade-in-up">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start"
+          >
+            <span class="subtitle">property on listings</span>
+            <h2 class="mt-3 text-center text-lg-start">
+              Explore Our <i class="ff-playfair">Collection</i> of
+              <i class="ff-playfair">Properties</i>
+            </h2>
+          </div>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-end"
+          >
+            <p class="col-12 col-lg-8 text-center text-lg-start">
+              Properties featuring exceptional design, prime locations, and
+              unmatched value. Crescent delivers excellence for every buyer,
+              seller, and investor in real estate.
+            </p>
+            <a href="property-listings.html" class="btn-2">More Listing &gt;</a>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 g-4 mt-4 fade-in-up">
+          <div class="col">
+            <div class="bg-listing-1 d-flex align-items-end">
+              <div style="z-index: 5" class="w-100">
+                <span class="text-listing">123 Main Street, Cityville</span>
+                <h4 class="c-white my-4">245 High Downtown</h4>
+                <div class="d-flex gap-4">
+                  <div class="text-listing">
+                    <i class="fa-solid fa-bed c-white me-2"></i>3 beds
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-house c-white me-2"></i>12 sqm
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-ruler-combined c-white me-2"></i>2
+                    floors
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-bath c-white me-2"></i>2 ba
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                  <h5 class="c-white">$800,000</h5>
+                  <a href="property-detail.html" class="btn-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-listing-3 d-flex align-items-end">
+              <div style="z-index: 5" class="w-100">
+                <span class="text-listing">123 Main Street, Cityville</span>
+                <h4 class="c-white my-4">98 Riverside Villa</h4>
+                <div class="d-flex gap-4">
+                  <div class="text-listing">
+                    <i class="fa-solid fa-bed c-white me-2"></i>7 beds
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-house c-white me-2"></i>18 sqm
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-ruler-combined c-white me-2"></i>2
+                    floors
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-bath c-white me-2"></i>5 ba
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                  <h5 class="c-white">$1,200,000</h5>
+                  <a href="property-detail.html" class="btn-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-listing-2 d-flex align-items-end">
+              <div style="z-index: 5" class="w-100">
+                <span class="text-listing">123 Main Street, Cityville</span>
+                <h4 class="c-white my-4">567 Sunset Blvd</h4>
+                <div class="d-flex gap-4">
+                  <div class="text-listing">
+                    <i class="fa-solid fa-bed c-white me-2"></i>6 beds
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-house c-white me-2"></i>15 sqm
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-ruler-combined c-white me-2"></i>2
+                    floors
+                  </div>
+                  <div class="text-listing">
+                    <i class="fa-solid fa-bath c-white me-2"></i>4 ba
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                  <h5 class="c-white">$950,000</h5>
+                  <a href="property-detail.html" class="btn-1">Learn More ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Listing End -->
+    <!-- Why Choose Us Start -->
+    <div class="bg-why-choose-us">
+      <div class="page-size h-100">
+        <div class="container-lg px-0">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="pb-5 fade-in-up">
+                <span class="subtitle c-white">why choose us</span>
+                <h2 class="c-white mt-4">
+                  Unmatched Quality, <i class="ff-playfair">Trust,</i> and
+                  <i class="ff-playfair">Care</i>
+                </h2>
+                <p class="c-white mt-5">
+                  Discover unparalleled expertise, personalized services, and
+                  trusted support. We bring clarity, excellence, and dedication
+                  to ensure your property journey is seamless and rewarding
+                </p>
+              </div>
+              <div
+                class="d-flex flex-column flex-md-row gap-5 align-self-end pt-1 mt-1 pt-lg-5 mt-lg-5 fade-in-up"
+                id="counters"
+              >
+                <div>
+                  <span class="head-why-choose-us">Active Agent</span>
+                  <h2 class="c-white" id="activeAgent">0+</h2>
+                </div>
+                <div>
+                  <span class="head-why-choose-us">Client Satisfaction</span>
+                  <h2 class="c-white" id="clientSatisfaction">0%</h2>
+                </div>
+                <div>
+                  <span class="head-why-choose-us">Property Listings</span>
+                  <h2 class="c-white" id="propertyListings">0+</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Why Choose Us End -->
+    <!-- Gallery Start -->
+    <div class="bg-subtle">
+      <div class="page-size">
+        <div class="container d-flex flex-column gap-3 px-0">
+          <div class="row row-cols-1 g-3 row-cols-sm-3 fade-in-up">
+            <img
+              src="img/gallery-1.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-1.jpg"
+            />
+            <img
+              src="img/gallery-2.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-2.jpg"
+            />
+            <img
+              src="img/gallery-3.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-3.jpg"
+            />
+          </div>
+          <div class="row row-cols-1 g-3 row-cols-sm-2 fade-in-up">
+            <img
+              src="img/gallery-4.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-4.jpg"
+            />
+            <img
+              src="img/gallery-5.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-5.jpg"
+            />
+          </div>
+          <div class="row row-cols-1 g-3 row-cols-sm-3 fade-in-up">
+            <img
+              src="img/gallery-6.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-6.jpg"
+            />
+            <img
+              src="img/gallery-7.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-7.jpg"
+            />
+            <img
+              src="img/gallery-8.jpg"
+              alt="gallery"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-img-src="img/gallery-8.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery End -->
+    <!-- Testimonials Start -->
+    <div class="bg-subtle">
+      <div class="page-size overflow-hidden">
+        <div class="d-block d-md-flex justify-content-between">
+          <div class="pb-2 fade-in-up">
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <span class="subtitle">Testimonials</span>
+            </div>
+            <h2 class="mt-3 mb-4 text-center">
+              Explore Our <i class="ff-playfair">Collection</i> of
+              <i class="ff-playfair">Properties</i>
+            </h2>
+          </div>
+          <div class="d-flex justify-content-center d-lg-block mt-0 mt-lg-5">
+            <button class="btn-2">More Review ></button>
+          </div>
+        </div>
+        <div class="swiper fade-in-up">
+          <div class="swiper-wrapper mt-4">
+            <div class="swiper-slide swiper-bg">
+              <div class="testimonial-card">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="img/testimonial-5.jpg"
+                    class="testimonial-circle-2"
+                    alt="testimonial"
+                  />
+                </div>
+                <h5 class="text-center mt-2">John Park</h5>
+                <div class="d-flex justify-content-center">
+                  <span class="testimonial-job">Sales Manager</span>
+                </div>
+                <p class="text-center mt-3">
+                  Crescent exceeded all expectations, ensuring every step was
+                  clear and smooth. They're my top recommendation for real
+                  estate services
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-bg">
+              <div class="testimonial-card">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="img/testimonial-6.jpg"
+                    class="testimonial-circle-2"
+                    alt="testimonial"
+                  />
+                </div>
+                <h5 class="text-center mt-2">Mark Lee</h5>
+                <div class="d-flex justify-content-center">
+                  <span class="testimonial-job">Marketing Specialist</span>
+                </div>
+                <p class="text-center mt-3">
+                  Working with Crescent was amazing. Their team's expertise,
+                  transparency, and dedication ensured a smooth and rewarding
+                  experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-bg">
+              <div class="testimonial-card">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="img/testimonial-1.jpg"
+                    class="testimonial-circle-2"
+                    alt="testimonial"
+                  />
+                </div>
+                <h5 class="text-center mt-2">Anna Ray</h5>
+                <div class="d-flex justify-content-center">
+                  <span class="testimonial-job">Business Consultant</span>
+                </div>
+                <p class="text-center mt-3">
+                  Crescent's team went above and beyond. They made my property
+                  sale efficient, straightforward, and successfull. Higly
+                  Recommend them!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-bg">
+              <div class="testimonial-card">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="img/testimonial-3.jpg"
+                    class="testimonial-circle-2"
+                    alt="testimonial"
+                  />
+                </div>
+                <h5 class="text-center mt-2">Paul Kim</h5>
+                <div class="d-flex justify-content-center">
+                  <span class="testimonial-job">Finnancial Analyst</span>
+                </div>
+                <p class="text-center mt-3">
+                  Their attention to detail and customer-first approach
+                  impressed me. Crescent made buying my first home enjoyable and
+                  stress-free
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-bg">
+              <div class="testimonial-card">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="img/testimonial-2.jpg"
+                    class="testimonial-circle-2"
+                    alt="testimonial"
+                  />
+                </div>
+                <h5 class="text-center mt-2">Lily Chen</h5>
+                <div class="d-flex justify-content-center">
+                  <span class="testimonial-job">UX Designer</span>
+                </div>
+                <p class="text-center mt-3">
+                  I'm thrilled with Crescent's service. Their expertise,
+                  patience, and guidance turned my housing search into an
+                  exciting journey
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-bg">
+              <div class="testimonial-card">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="img/testimonial-7.jpg"
+                    class="testimonial-circle-2"
+                    alt="testimonial"
+                  />
+                </div>
+                <h5 class="text-center mt-2">Jane Doe</h5>
+                <div class="d-flex justify-content-center">
+                  <span class="testimonial-job">Software Engineer</span>
+                </div>
+                <p class="text-center mt-3">
+                  Crescent provided seamless ervice, helping me find my dream
+                  home quickly and stress-free. Their professionalism is truly
+                  exceptional
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimoinals End-->
+    <!-- Discover Start -->
+    <div class="bg-discover">
+      <div class="page-size">
+        <div class="container px-0">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col fade-in-up">
+              <div class="pb-2">
+                <div class="d-flex">
+                  <span class="subtitle c-white">DISCOVER MORE</span>
+                </div>
+                <h2 class="mt-3 mb-4 c-white">
+                  Your Real Estate <i class="ff-playfair">Journey</i> Starts
+                  <i class="ff-playfair">Here</i>
+                </h2>
+              </div>
+              <div class="">
+                <div class="d-flex justify-content-start mt-4">
+                  <div>
+                    <img
+                      src="img/testimonial-1.jpg"
+                      alt="testimonial"
+                      class="testimonial-circle"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/testimonial-2.jpg"
+                      alt="testimonial"
+                      class="testimonial-circle testimonial-margin"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/testimonial-3.jpg"
+                      alt="testimonial"
+                      class="testimonial-circle testimonial-margin"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/testimonial-4.png"
+                      alt="testimonial"
+                      class="testimonial-circle testimonial-margin"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in-up">
+              <div class="mt-4 mt-lg-5 pt-0 pt-lg-5"></div>
+              <p class="c-white mt-0 mt-lg-5 pt-0 pt-lg-5">
+                Begin your property search now and access exclusive listings,
+                expert advice, and personalized recommendations your perfect
+                match
+              </p>
+              <div class="d-flex gap-5">
+                <a href="contact.html" class="btn-3">Contact Us ></a>
+                <a href="property-listings.html" class="btn-1"
+                  >View Listing ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Discover End -->
+    <!-- Blog Post Start -->
+    <div class="bg-subtle">
+      <div class="page-size">
+        <div class="container-xl">
+          <div class="row align-items-end">
+            <div class="col-12 col-lg-5 fade-in-up">
+              <div
+                class="pb-2 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+              >
+                <div class="d-flex">
+                  <span class="subtitle">OUR BLOG POST</span>
+                </div>
+                <h2 class="mt-3 mb-4 text-center text-md-start">
+                  Stay <i class="ff-playfair">Informed</i> with
+                  <i class="ff-playfair">Our Blog</i>
+                </h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-7 d-block d-lg-flex align-items-end gap-4 mt-2 mt-lg-0 fade-in-up"
+            >
+              <p class="text-center text-md-start col-lg-9">
+                Stay updated with the latest property insights, market trends,
+                and expert advice to make informed real estate decisions.
+              </p>
+              <div class="d-flex justify-content-center justify-content-md-end">
+                <a href="blog-post.html" class="btn-2 mt-2 mt-lg-0"
+                  >More Article ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 fade-in-up mt-4"
+          >
+            <div class="col blog-col-1 fade-in-up">
+              <a href="single-post.html">
+                <div class="blog-img-wrapper">
+                  <img src="img/blog-1.jpg" alt="blog" class="blog-img" />
+                </div>
+              </a>
+              <div class="blog-card">
+                <a href="single-post.html">
+                  <h5 class="c-white my-4">Tips for Buyers</h5>
+                </a>
+                <p class="c-text-2">
+                  zaderonstudio May 13, 2025 Single Post real Estate Journey
+                  Lorem...
+                </p>
+                <a href="single-post.html" class="blog-link">Learn more ></a>
+              </div>
+            </div>
+            <div class="col blog-col-2 fade-in-up">
+              <a href="single-post.html">
+                <div class="blog-img-wrapper">
+                  <img src="img/blog-2.jpg" alt="blog" class="blog-img" />
+                </div>
+              </a>
+              <div class="blog-card">
+                <a href="single-post.html">
+                  <h5 class="c-white my-4">Smart Home Innovations</h5>
+                </a>
+                <p class="c-text-2">
+                  zaderonstudio May 13, 2025 Single Post real Estate Journey
+                  Lorem...
+                </p>
+                <a href="single-post.html" class="blog-link">Learn more ></a>
+              </div>
+            </div>
+            <div class="col blog-col-3 fade-in-up">
+              <a href="single-post.html">
+                <div class="blog-img-wrapper">
+                  <img src="img/blog-3.jpg" alt="blog" class="blog-img" />
+                </div>
+              </a>
+              <div class="blog-card">
+                <a href="single-post.html">
+                  <h5 class="c-white my-4">Invest in Neighborhoods</h5>
+                </a>
+                <p class="c-text-2">
+                  zaderonstudio May 13, 2025 Single Post real Estate Journey
+                  Lorem...
+                </p>
+                <a href="single-post.html" class="blog-link">Learn more ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog Post End -->
+    <!-- FAQS Start -->
+    <div class="bg-subtle">
+      <div class="page-size pt-0">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-2 g-5">
+            <div class="col-12 col-lg-6 order-1 order-lg-0 fade-in-up">
+              <div class="accordion mt-2 mt-lg-5" id="faqsAccordion1">
+                <div class="accordion-item">
+                  <span class="accordion-header" id="headingOne1">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne1"
+                      aria-expanded="true"
+                      aria-controls="collapseOne1"
+                    >
+                      What services does Crescent offer?
+                    </button>
+                  </span>
+                  <div
+                    id="collapseOne1"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne1"
+                    data-bs-parent="#faqsAccordion1"
+                  >
+                    <div class="accordion-body">
+                      We specialize in property buying, selling, renting, and
+                      management, offering tailored solutions to meet your
+                      needs.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <span class="accordion-header" id="headingTwo1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo1"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo1"
+                    >
+                      How can I list my property with Crescent?
+                    </button>
+                  </span>
+                  <div
+                    id="collapseTwo1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo1"
+                    data-bs-parent="#faqsAccordion1"
+                  >
+                    <div class="accordion-body">
+                      Simply contact our team or use our online submission form.
+                      We’ll guide you through every step of the process
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <span class="accordion-header" id="headingThree1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree1"
+                      aria-expanded="false"
+                      aria-controls="collapseThree1"
+                    >
+                      What is the cost of listing a property?
+                    </button>
+                  </span>
+                  <div
+                    id="collapseThree1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree1"
+                    data-bs-parent="#faqsAccordion1"
+                  >
+                    <div class="accordion-body">
+                      Our pricing packages start at $299/month, designed to suit
+                      various budgets and requirements. Custom options are also
+                      available.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <span class="accordion-header" id="headingFour1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour1"
+                      aria-expanded="false"
+                      aria-controls="collapseFour1"
+                    >
+                      How do I schedule a property viewing?
+                    </button>
+                  </span>
+                  <div
+                    id="collapseFour1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour1"
+                    data-bs-parent="#faqsAccordion1"
+                  >
+                    <div class="accordion-body">
+                      You can book a viewing directly through our website or by
+                      contacting the listed agent for the property.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <span class="accordion-header" id="headingFive1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive1"
+                      aria-expanded="false"
+                      aria-controls="collapseFive1"
+                    >
+                      Does Crescent assist with financing options?
+                    </button>
+                  </span>
+                  <div
+                    id="collapseFive1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive1"
+                    data-bs-parent="#faqsAccordion1"
+                  >
+                    <div class="accordion-body">
+                      Yes, we work with trusted financial partners to help you
+                      secure loans or mortgages at competitive rates.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <span class="accordion-header" id="headingSix1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix1"
+                      aria-expanded="false"
+                      aria-controls="collapseSix1"
+                    >
+                      What areas do you serve?
+                    </button>
+                  </span>
+                  <div
+                    id="collapseSix1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSix1"
+                    data-bs-parent="#faqsAccordion1"
+                  >
+                    <div class="accordion-body">
+                      We operate in multiple regions, including urban, suburban,
+                      and rural areas. Check our listings for specific
+                      locations.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-0 order-lg-1 fade-in-up"
+            >
+              <div class="mt-5 mt-sm-0">
+                <span class="subtitle">FREQUENTLY ASK QUESTION</span>
+                <h2 class="mt-3 mb-4">
+                  Got Questions? <i class="ff-playfair">We</i> Have
+                  <i class="ff-playfair">Answer</i>
+                </h2>
+                <p class="mt-4">
+                  Find answer to common questions about our services, pricing,
+                  and process. Explore our FAQs to get all the details you need
+                </p>
+                <div class="d-flex gap-4 mt-4">
+                  <a href="faqs.html" class="btn-4">More FAQs ></a>
+                  <a href="contact.html" class="btn-2">Ask Question ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQS End -->
+    <!-- Sign Up Start -->
+    <div class="bg-subtle">
+      <div class="bg-sign-up page-size py-5">
+        <div class="container p-1 py-lg-5">
+          <div class="row">
+            <div class="col-12 col-lg-7 fade-in-up">
+              <h3 class="mt-3 mb-4 c-white text-center text-lg-start">
+                Sign Up Our <i class="ff-playfair">Newsletter</i> for
+                <i class="ff-playfair">Insight</i>
+              </h3>
+              <p class="mt-4 c-text-2 text-center text-lg-start">
+                Stay updated with the latest property news, tips, and exclusive
+                offers. Subscribe now and never miss an opportunity again
+              </p>
+            </div>
+            <div class="col-12 col-lg-5 d-flex align-items-end fade-in-up">
+              <div class="newsletter-container mx-auto">
+                <div class="popup-message" id="popupMessage">
+                  <div>
+                    <i class="fa-solid fa-check fa-2xl"></i>
+                  </div>
+                  Thank you! The form submitted successfully
+                </div>
+                <form class="newsletter-form" action="#" id="newsletterForm">
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="email-input"
+                  />
+                  <button type="submit" class="btn-newsletter">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign Up End -->
+    <!-- Footer Start -->
+    <div class="bg-subtle">
+      <div class="page-size">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-5 pe-lg-5">
+              <img
+                src="img/Cresent-Logo-Light_1.png"
+                alt="crescent logo"
+                class="footer-logo img-fluid"
+              />
+              <p class="c-text-1 mt-4">
+                Discover homes that match your style and needs-only with
+                Crescent's expert real estate solutions
+              </p>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h5>Contact</h5>
+              <div class="d-flex gap-2 mt-4">
+                <i class="fa-solid fa-phone c-main mt-1"></i>
+                <p class="c-text-1">+1 (555) 123-4567</p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="fa-solid fa-envelope-open c-main mt-1"></i>
+                <p class="c-text-1">
+                  <a
+                    href="/cdn-cgi/l/email-protection"
+                    class="__cf_email__"
+                    data-cfemail="dfb6b1b9b09fbcadbaacbcbab1abadbabeb3aba6f1bcb0b2"
+                    >info@sitename.com</a
+                  >
+                </p>
+              </div>
+              <h5 class="mt-4">Address</h5>
+              <div class="d-flex gap-2 mt-4">
+                <i class="fa-solid fa-location-dot c-main mt-1"></i>
+                <p class="c-text-1">
+                   Crescent Avenue, USA
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-2">
+              <h5>Explore</h5>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="footer-link">About</a>
+                </li>
+                <li>
+                  <a href="services.html" class="footer-link">Services</a>
+                </li>
+                <li>
+                  <a href="property-listings.html" class="footer-link"
+                    >Listing</a
+                  >
+                </li>
+                <li>
+                  <a href="pricing.html" class="footer-link">Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-2">
+              <h5>Quick Link</h5>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html" class="footer-link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="index.html" class="footer-link">Terms</a>
+                </li>
+                <li>
+                  <a href="index.html" class="footer-link">Disclaimer</a>
+                </li>
+                <li>
+                  <a href="index.html" class="footer-link">Support</a>
+                </li>
+                <li>
+                  <a href="index.html" class="footer-link">Cookies</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="gallery"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-body p-0">
+            <img
+              id="modalImage"
+              src="#"
+              alt="Gallery Modal"
+              class="img-fluid w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/js/swiper-bundle.min.js"></script>
+    <script src="lib/js/countUp.js"></script>
+    <script src="js/index.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"version":"2024.11.0","token":"bf2b6dfde57a4688a8a7204e4a949833","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
